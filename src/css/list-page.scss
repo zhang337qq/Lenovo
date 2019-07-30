@@ -1,0 +1,244 @@
+@import "modules/header";
+@import "modules/footer";
+@import "modules/reset";
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.wrap {
+    position: relative;
+    width: 520px;
+    height: 520px;
+}
+.imgs {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.main {
+    position: relative;
+    overflow: hidden;
+    padding: 4px;
+    width: 500px;
+    height: 500px;
+    /*border: 1px solid #dadada;*/
+}
+.smaller {
+    position: relative;
+    overflow: hidden;
+    width: 510px;
+    height: 92px;
+    margin-top: 10px;
+}
+.smaller li {
+    position: relative;
+    float: left;
+    padding: 2px;
+    width: 86px;
+    height: 86px;
+    border: 1px solid #cccccc;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.smaller li:first-child {
+    margin-left: 0;
+}
+.smaller .current {
+    border-color: #ff6a00;
+}
+.biger {
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    left: 550px;
+    width: 500px;
+    height: 500px;
+    z-index: 999;
+}
+.mask {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background: url('../images/mask-bg.png') repeat;
+    cursor: crosshair;
+}
+.biger img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+}
+.enlargement{
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.con_right{
+    position: relative;
+    margin-top: 36px;
+    width: 642px;
+    float: right;
+    color: #000000;
+}
+.enlargement .con_right h2{
+    font-size: 22px;
+    font-weight: normal;
+}
+.enlargement .con_right .dec{
+    color: #A2A2A2;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 22px;
+    word-break: break-all;
+    margin-bottom: 20px;
+}
+.enlargement .con_right .price-area{
+    background: #F9F9F9;
+    border: 1px solid #F0F0F0;
+}
+.enlargement .con_right .price-area .price-detail-wrap{
+    position: relative;
+    height: 38px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.enlargement .con_right .price-area .price-detail-wrap .prc-container{
+    position: absolute;
+    padding-left: 15px;
+    height: 42px;
+    line-height: 42px;
+    top: -3px;
+}
+.enlargement .con_right .price-area .price-detail-wrap .prc-container .price-desc{
+    display: inline-block;
+    font-size: 12px;
+    color: #E22319;
+    letter-spacing: 0.8px;
+    margin-right: 35px;
+    height: 42px;
+    width: 45px;
+}
+.sign-prc-group{
+    display: inline-block;
+    height: 42px;
+}
+.price-sign{
+    font-size: 12px;
+    color: #E1140A;
+    font-weight: bold;
+}
+.price-show{
+    font-weight: bold;
+    font-size: 28px;
+    color: #E1140A;
+}
+.total-evaluate-wrap{
+    position: absolute;
+    right: 0;
+    height: 35px;
+    border-left: 1px solid #E0E0E0;
+    top: 2px;
+    padding: 0 22px;
+}
+.total-evaluate-desc{
+    font-size: 12px;
+    color: #A5A5A5;
+}
+.total-evaluate-count{
+    font-size: 12px;
+    color: #4A4A4A;
+    cursor: pointer;
+}
+.business-staff-container{
+    margin: 15px 0 0 20px;
+    color: #434242;
+}
+.business-staff-container ul li{
+    margin-bottom: -8px;
+    font-size: 12px;
+}
+.guige-item-title{
+    line-height: 16px;
+    margin-top: 3px;
+    float: left;
+    margin-right: 20px;
+    width: 58px;
+}
+.guige-item-detail{
+    float: left;
+    width: 537px
+
+}
+.guige-item-detail span{
+    display: inline-block;
+    width: 214px;
+    padding: 0 21px;
+    height: 23px;
+    border: 1px solid #DADADA;
+    text-align: center;
+    line-height: 23px;
+    margin-right: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 10px;
+    float: left;
+}
+.guige-item-detail span:hover{
+    border-color: red;
+}
+.guige-item-detail span i{
+    font-style: normal;
+}
+.business-title{
+    float: left;
+    width: 58px;
+    line-height: 26px;
+    margin-right: 20px;
+}
+.add-count-wrap{
+    height: 26px !important;
+    width: 100px;
+    border: 1px solid #DADADA;
+    display: inline-block;
+    line-height: 24px;
+}
+.add-count-wrap input{
+    width: 100px;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+}
+.div_button_group{
+    position: relative;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.div_button_group button{
+    width: 130px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #E1140A;
+    text-align: center;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.div_button_group .buy{
+    color: #FFFFFF;
+    background-color: #E1140A
+}
+.div_button_group .add-shop{
+    color: #E1140A;
+    background-color: #FFEDED;
+}

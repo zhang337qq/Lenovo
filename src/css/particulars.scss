@@ -1,0 +1,321 @@
+@import "modules/header";
+@import "modules/reset";
+@import "modules/footer";
+.name-title{
+    width: 100%;
+    height: 78px;
+}
+.name-title ul{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+}
+.name-title ul li{
+     /*width: 168px;*/
+    width: auto;
+    height: 77px;
+    line-height: 77px;
+    margin-right: 4px;
+    float: left;
+    font-size: 14px;
+    color: #616161;
+    letter-spacing: 0;
+    text-align: center;
+    position: relative;
+}
+.name-title ul li:first-child{
+    width: auto;
+    border-bottom: 1px solid #395782;
+}
+.name-title ul li a{
+    display: inline-block;
+    /* width: 100%; */
+    height: 100%;
+    padding-left: 36px;
+}
+.name-title ul li i{
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/lenovoPC_home_active.png) 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.name-title ul li a:hover{
+    color: #395782;
+    font-weight: 600;
+}
+/*//商品查找结果*/
+.result{
+    background-color: #f5f5f5;
+    position: relative;
+    width: 100%;
+}
+.resultBox{
+    width: 1200px;
+    margin: 0 auto;
+    height: 48px;
+    line-height: 48px;
+}
+.resultBox a{
+    font-size: 12px;
+}
+.resultBox .total{
+    font-size: 12px;
+}
+.resultBox .total .num{
+    color: red;
+    font-size: 14px;
+}
+.brand{
+    width: 100%;
+    height: auto;
+    line-height: 48px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+/*清除浮动*/
+.clearfix {
+    zoom: 1;
+}
+/**/
+.footUl{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    /*height: auto;*/
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: flex-start;
+}
+.footUl .tip{
+    width: 9%;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 13px;
+}
+.footUl ul{
+    margin-bottom: 0;
+    width: 80%;
+    height: auto;
+    line-height: 48px;
+    overflow: hidden;
+}
+.footUl ul li{
+    cursor: pointer;
+    width: auto;
+    height: 100%;
+    /*text-align: center;/*/
+    display: inline-block;
+    /*text-align: center;*/
+    text-align: left;
+    margin-right: 50px;
+}
+.multiple{
+    width: 10%;
+    text-align: right;
+    background: url(../images/arr.png) right center no-repeat;
+    padding-right: 15px;
+    cursor: pointer;
+}
+section{
+    width: 100%;
+    min-width: 1230px;
+    height: auto;
+    margin-top: 24px;
+    background-color: #f5f5f5;
+}
+section .headNav{
+    width: 1200px;
+    height: 98px;
+    margin: 0 auto;
+}
+section .headNav ul{
+    margin-top: 40px;
+    height: 98px;
+}
+
+section .headNav ul li{
+    float: left;
+    width: auto;
+    text-align: center;
+    height: 18px;
+    border-right: 1px solid #bebebe;
+    margin-top: 38px;
+    cursor: pointer;
+    font-weight: normal;
+    color: #505050;
+    padding: 0 15px;
+}
+section .headNav ul li:first-child{
+    color: #e2231a;
+}
+section .headNav ul .searchbox{
+    width: 343px;
+    height: auto;
+    text-align: left;
+    font-size: 14px;
+    border-right: none;
+}
+section .headNav ul .searchbox input{
+    width: 62px;
+    height: 22px;
+    line-height: 23px;
+    padding: 0 5px;
+    font-weight: normal;
+    vertical-align: middle;
+    border-radius: 2px;
+    border: 1px solid #dadada;
+}
+section .headNav ul .searchbox .searchInput{
+    width: 85px;
+    vertical-align: middle;
+    font-size: 12px;
+}
+section .headNav ul .way{
+    width: 370px;
+    border-right: none;
+    float: right;
+    text-align: right;
+    padding-right: 0;
+}
+section .headNav ul .way span{
+    width: auto;
+    height: 20px;
+    display: inline-block;
+    background: url(../images/check.jpg) 0 0 no-repeat;
+    padding-left: 22px;
+    cursor: pointer;
+    font-weight: normal;
+    text-align: center;
+    margin-left: 6px;
+}
+.productDetailUl{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 14px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.productDetailUl li{
+    width: 250px;
+    height: 375px;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-bottom: 14px;
+    vertical-align: top;
+    padding: 10px 20px 22px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.productDetailUl li a{
+    width: 250px;
+    height: 160px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.productDetailUl li a img{
+    width: 160px;
+    height: 160px;
+}
+.productDetailUl li .lebalDiv{
+    margin-top: 5px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ebebeb;
+    overflow: hidden;
+}
+.productDetailUl li .lebalDiv i{
+    display: inline-block;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+}
+.productDetailUl li .lebalDiv i:nth-child(1){
+    background-color: orange;
+}
+.productDetailUl li .lebalDiv i:nth-child(2){
+    background-color: greenyellow;
+}
+.productDetailUl li .lebalDiv i:nth-child(3){
+    background-color: palevioletred;
+}
+.productDetailUl li .lebalDiv span{
+    background-color: #0c9de8;
+    float: right;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 2px;
+    margin-top: 16px;
+}
+.productDetailUl li .search_name{
+    line-height: 17px;
+    height: 36px;
+    overflow: hidden;
+    margin-top: 14px;
+    text-align: left;
+}
+.productDetailUl li .search_mes{
+    height: 36px;
+    line-height: 17px;
+    overflow: hidden;
+    margin-top: 5px;
+    text-align: left;
+    color: #cfcfcf;
+}
+.productDetailUl li .search_price{
+    font-size: 14px;
+    font-weight: bold;
+    color: #2d2d2d;
+    height: 36px;
+    line-height: 36px;
+}
+.productDetailUl li .btn_compare_select{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: auto;
+    height: auto;
+    z-index: 10;
+    color: #444444;
+    cursor: pointer;
+}
+.productDetailUl li .btn_compare_select i{
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    background: url(../images/check.jpg) no-repeat left top;
+    vertical-align: middle;
+    margin-right: 0;
+}
+.productDetailUl li .btn_compare_select span{
+    vertical-align: middle;
+}

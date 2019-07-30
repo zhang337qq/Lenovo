@@ -1,0 +1,135 @@
+header{
+    width: 100%;
+    height: 53px;
+}
+header .logo{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 55;
+}
+.nav{
+    width: 1200px;
+    margin:  0 auto;
+    height: 49px;
+}
+.nav li{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+.nav-left{
+    position: relative;
+}
+.nav-left li{
+    margin-right: 22px;
+    line-height: 49px;
+    font-size: 15px;
+    color: #8d8d8d;
+}
+.nav-left li a{
+    color: #8d8d8d;
+}
+.nav-right li{
+    position: relative;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.nav-right li i{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin-top: 4px;
+    background-color: #cccccc;
+}
+.nav-right li img{
+    width: 25px;
+    height: 25px;
+    margin-top: 14px;
+}
+#bubble{
+    position: absolute;
+    display: block;
+    top: 32px;
+    right: -30px;
+    width: 157px;
+    height: 33px;
+    background: url(../../images/028da9e3-588c-4a8c-9ed7-e94a9c639a12.png) no-repeat;
+    background-size: 157px 33px;
+    z-index: 3;
+    text-align: center;
+    line-height: 36px;
+    font-style: normal;
+    padding-right: 36px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#bubble a{
+    color: #ba9964;
+    font-size: 12px;
+}
+#bubble a img{
+    position: absolute;
+    right: 4px;
+    top: -5px;
+    width: 22px;
+    height: 22px;
+}
+.fxx{
+    width: 100%;
+    top: 0;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    background: #e0e0e0;
+}
+.theme{
+    width: 100%;
+    background: #e0e0e0;
+    height: 70px;
+}
+/*.sm-theme{*/
+    /*width: 1200px;*/
+    /*margin: 0 auto;*/
+    /*height: 50px;*/
+    /*line-height: 50px;*/
+/*}*/
+.mask-theme{
+    width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+    line-height: 70px;
+}
+.mask-theme .theme-left{
+    height: 50px;
+}
+.mask-theme .theme-left li{
+    float: left;
+    margin-right: 45px;
+    line-height: 70px;
+    transition: all .2s;
+}
+.mask-theme .theme-left li a{
+    font-size: 17px;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+.mask-theme input{
+    height: 36px;
+    background: #eaeaea url("../../images/f26ff743-3f82-4072-b27a-193f0e9ad675.png") no-repeat right center;
+    background-size: 20px 20px;
+    border-radius: 30px;
+    z-index: 0;
+    width: 220px;
+     outline: 0;
+     font-size: 12px;
+     line-height: 36px;
+    border: 0;
+    color: #999;
+    padding: 0 0 0 17px;
+    box-sizing: content-box;
+    margin-top: 14px;
+}

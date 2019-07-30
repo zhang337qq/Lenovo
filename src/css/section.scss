@@ -1,0 +1,169 @@
+section{
+    width: 1200px;
+    margin: 0 auto;
+    /*background-color: pink;*/
+    height: 1150px;
+}
+.tab-title{
+    position: relative;
+    height: 104px;
+    line-height: 104px;
+    font-size: 0;
+}
+.tab-line {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    height: 1px;
+    background-color: #ccc;
+}
+.tab-title-info{
+  position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 32px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 104px;
+    color: #616161;
+}
+.tab-title-info p{
+    margin: 0 auto;
+    width: 442px;
+    height: 104px;
+    background: #fff;
+}
+.Individuals{
+    width: 1200px;
+    height: 800px;
+}
+.ul_tab_title{
+    width: 100%;
+    position: relative;
+    font-size: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.ul_tab_title li{
+    display: inline-block;
+    width: 14.28%;
+    height: 123px;
+    text-align: center;
+}
+.ul_tab_title li a>p{
+    height: 74px;
+    line-height: 74px;
+}
+.ul_tab_title li a img{
+    width: 39px;
+    height: 40px;
+    vertical-align: bottom;
+    line-height: 1;
+}
+.ul_tab_title li a span{
+    margin-top: 14px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #616161;
+    line-height: 20px;
+}
+.liContent{
+    width: 1200px;
+    padding-top: 100px;
+    position: absolute;
+    display: none;
+    left: 0;
+}
+.liContent .liContent-top{
+    width: 1200px;
+}
+.liContent .liContent-top ul li{
+    width: 291px;
+    height: 381px;
+    background: #eee;
+    margin-right: 9px;
+    transition: all .2s;
+
+}
+.liContent .liContent-top ul li:hover{
+    transform: scale(1.01);
+    box-shadow: 0 5px 10px silver;
+}
+.liContent .liContent-top ul li .img-warp{
+    position: relative;
+    padding-top: 100%;
+    background: #eee;
+    width: auto;
+    height: auto;
+}
+.liContent .liContent-top ul li .img-warp img{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+.liContent .liContent-top ul li .info{
+    height: 93px;
+}
+.liContent .liContent-top ul li .info h6{
+    margin-bottom: 4px;
+    font-size: 20px;
+    line-height: 25px;
+}
+.liContent .liContent-top ul li .info .subtitle{
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 16px;
+}
+.liContent .liContent-top ul li .info .price{
+    font-size: 20px;
+    line-height: 28px;
+}
+.liContent-bottom{
+    width: 100%;
+    padding-top: 50px;
+}
+.liContent-bottom-left{
+    width: 291px;
+    transition: all .2s;
+
+}
+.liContent-bottom-left:hover{
+    box-shadow: 0 5px 10px silver;
+    transform: scale(1.03);
+}
+.liContent-bottom-left img{
+    width: 100%;
+}
+.liContent-bottom-right{
+    height: 100%;
+    width: 900px;
+    transition: all .2s;
+
+}
+.liContent-bottom-right:hover{
+    transform: scale(1.01);
+    box-shadow: 0 5px 10px silver;
+}
+.liContent-bottom-right img{
+    height: 100%;
+    width: 100%;
+}
+#ul_tab_title2:hover #liContent2{
+    display: block;
+}
+#ul_tab_title3:hover #liContent3{
+    display: block;
+}
+#ul_tab_title4:hover #liContent4{
+    display: block;
+}
+#ul_tab_title5:hover #liContent5{
+    display: block;
+}
+#ul_tab_title6:hover #liContent6{
+    display: block;
+}
