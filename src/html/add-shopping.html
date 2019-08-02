@@ -12,7 +12,7 @@
 <div class="box-top">
     <div class="cen-top">
         <ul class="fr">
-            <li><a href="../index.html">返回首页</a></li>
+            <li><a href="/">返回首页</a></li>
             <li><a href="javascript:;">登录</a></li>
         </ul>
     </div>
@@ -22,18 +22,19 @@
     <img src="/images/pic-12.jpg" alt="" class="fr">
 </div>
 <div id="content">
+    <table class="tab-title">
+        <tr class="title-name">
+            <td class="title_1" colspan="3" width="462"><input id="allCheckBox" type="checkbox" value="" onclick="selectAll()" />店铺宝贝</td>
+            <td class="title_3" width="163">获积分</td>
+            <td class="title_4" width="152">单价（元）</td>
+            <td class="title_5" width="152">数量</td>
+            <td class="title_6" width="152">小计（元）</td>
+            <td class="title_7" width="117">操作</td>
+        </tr>
+    </table>
     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="shopping">
         <form action="" method="post" name="myform">
-            <tr class="title-name">
-                <td class="title_1" colspan="3" width="462"><input id="allCheckBox" type="checkbox" value="" onclick="selectAll()" />店铺宝贝</td>
-                <td class="title_3" width="163">获积分</td>
-                <td class="title_4" width="152">单价（元）</td>
-                <td class="title_5" width="152">数量</td>
-                <td class="title_6" width="152">小计（元）</td>
-                <td class="title_7" width="117">操作</td>
-            </tr>
-
-            <tr id="product1" class="title-name2">
+            <tr id="product2" class="title-name2">
                 <td class="cart_td_1" width="57"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></td>
                 <td class="cart_td_2" width="148"><img src="/images/n1.jpg" class="pic-size" alt="shopping"/></td>
                 <td class="cart_td_3" width="257" style="text-align: left">
@@ -47,7 +48,7 @@
                     <span  onclick="changeNum('num_1','minus')" class="hand">
                         -
                     </span>
-                    <input id="num_1" type="text"  value="1" class="num_input" readonly="readonly"/>
+                    <input id="num_2" type="text"  value="1" class="num_input" readonly="readonly"/>
                     <span onclick="changeNum('num_1','add')"  class="hand">
                         +
                     </span>
@@ -55,52 +56,6 @@
                 <td class="cart_td_7" width="152"></td>
                 <td class="cart_td_8" width="117"><a href="javascript:deleteRow('product1');" title="删除">删除</a></td>
             </tr>
-            <tr id="product1" class="title-name2">
-                <td class="cart_td_1" width="57"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></td>
-                <td class="cart_td_2" width="148"><img src="/images/n1.jpg" class="pic-size" alt="shopping"/></td>
-                <td class="cart_td_3" width="257" style="text-align: left">
-                    <a href="#">拯救者 Y7000 2019高色域 英特尔酷睿i5 15.6英寸游戏笔记本 黑色</a>
-                    <br/>
-                    <img src="/images/lenovo_icon.jpg" alt=""><span>购买联想服务</span>
-                </td>
-                <td class="cart_td_4" width="163">52.0</td>
-                <td class="cart_td_5">9999.00</td>
-                <td class="cart_td_6" width="152">
-                    <span  onclick="changeNum('num_1','minus')" class="hand">
-                        -
-                    </span>
-                    <input id="num_1" type="text"  value="1" class="num_input" readonly="readonly"/>
-                    <span onclick="changeNum('num_1','add')"  class="hand">
-                        +
-                    </span>
-                </td>
-                <td class="cart_td_7" width="152"></td>
-                <td class="cart_td_8" width="117"><a href="javascript:deleteRow('product1');" title="删除">删除</a></td>
-            </tr>
-            <tr id="product1" class="title-name2">
-                <td class="cart_td_1" width="57"><input name="cartCheckBox" type="checkbox" value="product1" onclick="selectSingle()" /></td>
-                <td class="cart_td_2" width="148"><img src="/images/n1.jpg" class="pic-size" alt="shopping"/></td>
-                <td class="cart_td_3" width="257" style="text-align: left">
-                    <a href="#">拯救者 Y7000 2019高色域 英特尔酷睿i5 15.6英寸游戏笔记本 黑色</a>
-                    <br/>
-                    <img src="/images/lenovo_icon.jpg" alt=""><span>购买联想服务</span>
-                </td>
-                <td class="cart_td_4" width="163">52.0</td>
-                <td class="cart_td_5">9999.00</td>
-                <td class="cart_td_6" width="152">
-                    <span  onclick="changeNum('num_1','minus')" class="hand">
-                        -
-                    </span>
-                    <input id="num_1" type="text"  value="1" class="num_input" readonly="readonly"/>
-                    <span onclick="changeNum('num_1','add')"  class="hand">
-                        +
-                    </span>
-                </td>
-                <td class="cart_td_7" width="152"></td>
-                <td class="cart_td_8" width="117"><a href="javascript:deleteRow('product1');" title="删除">删除</a></td>
-            </tr>
-            
-            
         </form>
     </table>
     <div class="mask-box">
@@ -117,9 +72,7 @@
 
 </div>
 <footer></footer>
-<script src="/libs/jquery/jquery-3.4.1.min.js"></script>
-<script>
-    $('footer').load('/html/modules/footer.html');
-</script>
+<script src="/libs/requirejs/require.min.js" data-main="/js/add-shop.js"></script>
+
 </body>
 </html>

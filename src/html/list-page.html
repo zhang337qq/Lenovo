@@ -9,132 +9,115 @@
 <body>
 <header>
 </header>
-<div class="theme" id="theme">
-</div>
-<div class="enlargement">
-    <div class="wrap fl">
-        <div class="biger" id="biger"></div>
-        <div class="imgs">
-            <div class="main" id="main">
-                <div class="mask" id="mask"></div>
+<!--<div class="theme" id="theme">-->
+<!--</div>-->
+<div class="enlargement" id="enlargement">
+    <script type="text/html" id="detail-template">
+        <div class="magnifier fl" id="magnifier1">
+            <div class="magnifier-container">
+                <div class="images-cover"></div>
+                <div class="move-view"></div>
             </div>
-            <ul class="smaller" id="smaller"></ul>
+            <div class="magnifier-assembly">
+                <div class="magnifier-btn">
+                    <span class="magnifier-btn-left">&lt;</span>
+                    <span class="magnifier-btn-right">&gt;</span>
+                </div>
+                <div class="magnifier-line">
+                    <ul class="clearfix animation03">
+                        {{each detail.imgs img}}
+                        <li>
+                            <div class="small-img">
+                                <img src="{{img}}" />
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+        
+            </div>
+            <div class="magnifier-view"></div>
+    
         </div>
-        <div class="bo"></div>
-    </div>
-    <div class="con_right">
-        <h2>
-            拯救者 Y7000 2019高色域 英特尔酷睿i7 15.6英寸游戏笔记本 黑色
-        </h2>
-        <div class="dec">
-            九代英特尔酷睿i7-9750H/Windows 10 家庭中文版/15.6英寸/8G/512G SSD/ GeForce GTX 1650 4G独显/黑色
-        </div>
-        <div class="price-area">
-            <!--价格及评价-->
-            <div class="price-detail-wrap">
-                <div class="prc-container">
-                    <div class="price-desc">会员价</div>
-                    <div class="sign-prc-group">
-                        <span class="price-sign">￥</span>
-                        <span class="price-show">9999</span>
+        <div class="con_right fr">
+            <h2>
+                {{detail.name}}
+            </h2>
+            <div class="dec">
+                {{detail.configuration}}
+            </div>
+            <div class="price-area">
+                <!--价格及评价-->
+                <div class="price-detail-wrap">
+                    <div class="prc-container">
+                        <div class="price-desc">会员价</div>
+                        <div class="sign-prc-group">
+                            <span class="price-sign">￥</span>
+                            <span class="price-show">{{detail.price}}</span>
+                        </div>
+                    </div>
+                    <div class="total-evaluate-wrap">
+                        <div class="total-evaluate-desc">
+                            累计评价
+                        </div>
+                        <div class="total-evaluate-count">
+                            2898
+                        </div>
                     </div>
                 </div>
-                <div class="total-evaluate-wrap">
-                    <div class="total-evaluate-desc">
-                    累计评价
-                    </div>
-                    <div class="total-evaluate-count">
-                        2898
-                    </div>
-                </div>
             </div>
-        </div>
-        <div class="business-staff-container">
-            <ul>
-                <li>
-                    <div class="guige-item-title">
-                        选择配置
-                    </div>
-                    <div class="guige-item-detail">
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
+            <div class="business-staff-container">
+                <ul>
+                    <li>
+                        <div class="guige-item-title">
+                            选择配置
+                        </div>
+                        <div class="guige-item-detail">
+                            {{each detail.model model}}
+                            <span>
+                            <i>{{model}}</i>
                         </span>
+                            {{/each}}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="business-staff-container">
+                <ul>
+                    <li>
+                        <div class="guige-item-title">
+                            选择配置
+                        </div>
+                        <div class="guige-item-detail">
+                            {{each detail.model model}}
                         <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
+                            <i>{{model}}</i>
                         </span>
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="business-staff-container">
-            <ul>
-                <li>
-                    <div class="guige-item-title">
-                        选择配置
-                    </div>
-                    <div class="guige-item-detail">
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                        <span>
-                            <i>2019款 高色域【i5/8G/512G SSD/1606ips</i>
-                        </span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="business-staff-container">
-            <div class="business-title">购买数量</div>
+                            {{/each}}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="business-staff-container">
+                <div class="business-title">购买数量</div>
                 <div class="add-count-wrap" id="addcountbox">
                     <input type="number" value="1" id="num">
                 </div>
-        </div>
-        <div class="business-staff-container">
-            <div class="business-title">&nbsp;</div>
-            <div class="div_button_group">
-                <button class="buy">立即购买</button>
-                <button class="add-shop">加入购物车</button>
+            </div>
+            <div class="business-staff-container">
+                <div class="business-title">&nbsp;</div>
+                <div class="div_button_group">
+                    <button class="buy">立即购买</button>
+                    <button class="add-shop">加入购物车</button>
+                </div>
             </div>
         </div>
-    </div>
+    
+    </script>
+  
 </div>
 <footer></footer>
-<script src="/js/header.js"></script>
-<script src="/js/enlargement.js"></script>
-<script src="/libs/jquery/jquery-3.4.1.min.js"></script>
-<script>
-    $('header').load('/html/modules/header.html');
-    $('footer').load('/html/modules/footer.html');
-</script>
+<script src="/libs/requirejs/require.min.js" data-main="/js/list-page"></script>
+
 </body>
 </html>

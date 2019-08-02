@@ -30,6 +30,7 @@ header .logo{
 .nav-left li a{
     color: #8d8d8d;
 }
+
 .nav-right li{
     position: relative;
     margin-left: 20px;
@@ -77,31 +78,37 @@ header .logo{
     width: 22px;
     height: 22px;
 }
-.fxx{
-    width: 100%;
-    top: 0;
-    height: 50px;
-    position: fixed;
-    left: 0;
-    z-index: 999;
-    background: #e0e0e0;
-}
 .theme{
     width: 100%;
     background: #e0e0e0;
     height: 70px;
+    line-height: 70px;
 }
-/*.sm-theme{*/
-    /*width: 1200px;*/
-    /*margin: 0 auto;*/
-    /*height: 50px;*/
-    /*line-height: 50px;*/
-/*}*/
+.navFix{
+    position: fixed;
+    background: #e0e0e0;
+    width: 100% !important;;
+    top: 0;
+    left: 0;
+    height: 50px !important;
+    line-height: 50px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+    //border-bottom:1px solid #e3e3e3\9;
+    z-index: 33;
+}
 .mask-theme{
     width: 1200px;
     margin: 0 auto;
     height: 70px;
+    //position: relative;
     line-height: 70px;
+}
+.box-theme{
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    //position: relative;
 }
 .mask-theme .theme-left{
     height: 50px;
@@ -109,7 +116,7 @@ header .logo{
 .mask-theme .theme-left li{
     float: left;
     margin-right: 45px;
-    line-height: 70px;
+    //line-height: 50px;
     transition: all .2s;
 }
 .mask-theme .theme-left li a{
@@ -117,19 +124,36 @@ header .logo{
     color: #3a3a3a;
     font-weight: 600;
 }
-.mask-theme input{
-    height: 36px;
-    background: #eaeaea url("../../images/f26ff743-3f82-4072-b27a-193f0e9ad675.png") no-repeat right center;
-    background-size: 20px 20px;
-    border-radius: 30px;
-    z-index: 0;
-    width: 220px;
-     outline: 0;
-     font-size: 12px;
-     line-height: 36px;
-    border: 0;
-    color: #999;
-    padding: 0 0 0 17px;
-    box-sizing: content-box;
-    margin-top: 14px;
+.mask-theme
+    .theme-right{
+    position: relative;
+    input{
+        height: 36px;
+        background: #eaeaea url("../../images/f26ff743-3f82-4072-b27a-193f0e9ad675.png") no-repeat right center;
+        background-size: 20px 20px;
+        border-radius: 30px;
+        z-index: 0;
+        width: 220px;
+        outline: 0;
+        font-size: 12px;
+        line-height: 36px;
+        border: 0;
+        color: #999;
+        padding: 0 0 0 17px;
+        box-sizing: content-box;
+        margin-top: 14px;
+    }
+}
+
+#inputUl{
+    position: absolute;
+    right: 140px;
+    top: 40px;
+    z-index: 999;
+    li{
+        font-size: 12px;
+        color: #090909;
+        width: 200%;
+        height: 50px;
+    }
 }

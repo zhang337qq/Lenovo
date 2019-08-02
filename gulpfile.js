@@ -78,9 +78,10 @@ gulp.task("libs", () =>{
 
 //现在指定一个watch任务监听事件的改变
 gulp.task("watch", ()=>{
-    gulp.watch("src/**/*.html",['html'])
-    gulp.watch("src/css/*.scss",['css'])
-    gulp.watch("src/js/*.js",['js'])
+    gulp.watch('src/**/*.html',['html'])
+    gulp.watch('src/css/**/*.scss',['css'])
+    gulp.watch('src/js/**/*.js',['js'])
+
 })
 
 //现在吧所有要执行的任务放在一起

@@ -13,3 +13,12 @@ table{border-collapse: collapse;}
 .fl{float:left;}
 .fr{float:right;}
 .border0{border:none!important;background: none!important;}
+.clearfix:after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  content: "";
+}

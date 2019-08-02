@@ -5,15 +5,13 @@
     <title>官网首页</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="/images/b2c_favicon.ico">
-
-    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
 </head>
 <body>
     <!--头部导航栏开始-->
     <header>
-        <h1><a href="javascript:;"><img src="images/2d4534f6-29f3-4a05-8e68-97d9904c7bd2.png" alt=""></a></h1>
+        <h1><a href="/"><img src="images/2d4534f6-29f3-4a05-8e68-97d9904c7bd2.png" alt=""></a></h1>
         <div class="container-nav">
-            <ul class="hd-center">
+            <ul class="hd-center" id="hdCen">
                 <li>个人及家庭产品
                     <div class="content-area">
                         <div class="content-area-title">
@@ -483,17 +481,19 @@
                 <li>资讯</li>
                 <li>门店</li>
             </ul>
-            <ul class="hd-right">
+            <ul class="hd-right fr">
                 <li>
                     <img src="images/357aac65-7c0e-45d8-a10d-c317da3abbde.png" alt="">
                 </li>
                 <li class="user">
-                    <span>登录</span>
+                    <a href=""><span>登录</span></a>
                     <strong></strong>
-                    <span>注册</span>
+                    <a href="/html/register.html"><span>注册</span></a>
                     <div class="shopping">
-                        <img src="images/dwchqqquj8xm07k4kcu0wxusld80na597407.png" alt="">
-                        <i>0</i>
+                        <a href="/html/add-shopping.html">
+                            <img src="images/dwchqqquj8xm07k4kcu0wxusld80na597407.png" alt="">
+                            <i>0</i>
+                        </a>
                     </div>
                 </li>
             </ul>
@@ -536,7 +536,7 @@
         <div class="Individuals">
             <ul class="ul_tab_title">
                 <li id="ul_tab_title1">
-                    <a href="javascript:;">
+                    <a href="/html/particulars.html">
                        <p>
                            <img src="images/1f8f24a4-ed28-41f6-9155-7b8a79dd33ae.png" alt="">
                            <span>Lenovo 台式机</span>
@@ -544,55 +544,23 @@
                     </a>
                     <div class="liContent" style="display: block;" id="liContent1">
                         <div class="liContent-top">
-                            <ul>
-                                <li>
-                                    <a href="javascript:;">
+                            <ul class="topUl">
+                                <script type="text/html" id="desktop">
+                                    {{each list shop}}
+                                    <li>
+                                    <a href="/html/particulars.html?id={{shop.id}}" target="_blank">
                                         <div class="img-warp">
-                                            <img src="images/24kv8fincenf67fow1jlk51259gzll348969.png" alt="">
+                                        <img src="{{shop.image}}" alt="">
                                         </div>
                                         <div class="info">
-                                            <h6>拯救者刃9000  3代</h6>
-                                            <p class="subtitle">RTX 2060 SUPER显卡  畅玩2K分辨率</p>
-                                            <p class="price">￥ 9999</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                    <div class="img-warp">
-                                        <img src="images/24kv8fincenf67fow1jlk51259gzll348969.png" alt="">
+                                        <h6>{{shop.mame}}</h6>
+                                    <p class="subtitle">{{shop.title}}</p>
+                                    <p class="price">￥ {{shop.price}}</p>
                                     </div>
-                                    <div class="info">
-                                        <h6>拯救者刃9000  3代</h6>
-                                        <p class="subtitle">RTX 2060 SUPER显卡  畅玩2K分辨率</p>
-                                        <p class="price">￥ 9999</p>
-                                    </div>
-                                </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <div class="img-warp">
-                                            <img src="images/24kv8fincenf67fow1jlk51259gzll348969.png" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h6>拯救者刃9000  3代</h6>
-                                            <p class="subtitle">RTX 2060 SUPER显卡  畅玩2K分辨率</p>
-                                            <p class="price">￥ 9999</p>
-                                        </div>
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <div class="img-warp">
-                                            <img src="images/24kv8fincenf67fow1jlk51259gzll348969.png" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h6>拯救者刃9000  3代</h6>
-                                            <p class="subtitle">RTX 2060 SUPER显卡  畅玩2K分辨率</p>
-                                            <p class="price">￥ 9999</p>
-                                        </div>
-                                    </a>
-                                </li>
+                                    </li>
+                                    {{/each}}
+                                </script>
                             </ul>
                         </div>
                         <div class="liContent-bottom">
@@ -614,55 +582,23 @@
                     </a>
                     <div class="liContent"  id="liContent2">
                         <div class="liContent-top">
-                            <ul>
-                                <li>
-                                    <a href="javascript:;">
-                                        <div class="img-warp">
-                                            <img src="images/24kv8fincenf67fow1jlk51259gzll348969.png" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h6>拯救者刃9000  3代</h6>
-                                            <p class="subtitle">RTX 2060 SUPER显卡  畅玩2K分辨率</p>
-                                            <p class="price">￥ 9999</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                    <div class="img-warp">
-                                        <img src="images/287l1oanyxoa6etkc5exgcgtqeinn1449846.png" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <h6>拯救者刃9000  3代</h6>
-                                        <p class="subtitle">RTX 2060 SUPER显卡  畅玩2K分辨率</p>
-                                        <p class="price">￥ 9999</p>
-                                    </div>
-                                </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <div class="img-warp">
-                                            <img src="images/287l1oanyxoa6etkc5exgcgtqeinn1449846.png" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h6>拯救者刃9000  3代</h6>
-                                            <p class="subtitle">RTX 2060 SUPER显卡  畅玩2K分辨率</p>
-                                            <p class="price">￥ 9999</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <div class="img-warp">
-                                            <img src="images/287l1oanyxoa6etkc5exgcgtqeinn1449846.png" alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h6>拯救者刃9000  3代</h6>
-                                            <p class="subtitle">RTX 2060 SUPER显卡  畅玩2K分辨率</p>
-                                            <p class="price">￥ 9999</p>
-                                        </div>
-                                    </a>
-                                </li>
+                            <ul class="topUl">
+                                <script type="text/html" id="desktop2">
+                                    {{each list shop}}
+                                    <li>
+                                        <a href="/html/particulars.html?id={{shop.id}}" target="_blank">
+                                            <div class="img-warp">
+                                                <img src="{{shop.image}}" alt="">
+                                            </div>
+                                            <div class="info">
+                                                <h6>{{shop.mame}}</h6>
+                                                <p class="subtitle">{{shop.title}}</p>
+                                                <p class="price">￥ {{shop.price}}</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    {{/each}}
+                                </script>
                             </ul>
                         </div>
                         <div class="liContent-bottom">
@@ -960,14 +896,10 @@
     </section>
     <!--主体内容结束-->
     <!--结尾部分开始-->
-    <link rel="stylesheet" href="/css/footer.css">
   <footer>
 
   </footer>
     <script src="/js/move.js"></script>
-    <script src="/libs/jquery/jquery-3.4.1.min.js"></script>
-    <script>
-        $('footer').load('/html/modules/footer.html');
-    </script>
+    <script src="/libs/requirejs/require.min.js" data-main="/js/index.js"></script>
 </body>
 </html>

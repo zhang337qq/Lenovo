@@ -1,7 +1,3 @@
-// JavaScript Document
-
-
-
 /*改变所购商品的数量*/
 function changeNum(numId,flag){/*numId表示对应商品数量的文本框ID，flag表示是增加还是减少商品数量*/
 	var numId=document.getElementById(numId);

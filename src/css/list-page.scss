@@ -1,85 +1,12 @@
 @import "modules/header";
 @import "modules/footer";
 @import "modules/reset";
-img {
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-}
-.wrap {
-    position: relative;
-    width: 520px;
-    height: 520px;
-}
-.imgs {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-.main {
-    position: relative;
-    overflow: hidden;
-    padding: 4px;
-    width: 500px;
-    height: 500px;
-    /*border: 1px solid #dadada;*/
-}
-.smaller {
-    position: relative;
-    overflow: hidden;
-    width: 510px;
-    height: 92px;
-    margin-top: 10px;
-}
-.smaller li {
-    position: relative;
-    float: left;
-    padding: 2px;
-    width: 86px;
-    height: 86px;
-    border: 1px solid #cccccc;
-    margin-left: 10px;
-    cursor: pointer;
-
-}
-.smaller li:first-child {
-    margin-left: 0;
-}
-.smaller .current {
-    border-color: #ff6a00;
-}
-.biger {
-    position: absolute;
-    overflow: hidden;
-    display: none;
-    left: 550px;
-    width: 500px;
-    height: 500px;
-    z-index: 999;
-}
-.mask {
-    position: absolute;
-    display: none;
-    left: 0;
-    top: 0;
-    width: 200px;
-    height: 200px;
-    background: url('../images/mask-bg.png') repeat;
-    cursor: crosshair;
-}
-.biger img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 200%;
-    height: 200%;
-}
 .enlargement{
     height: 700px;
     width: 1200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
 }
 .con_right{
     position: relative;
@@ -241,4 +168,134 @@ img {
 .div_button_group .add-shop{
     color: #E1140A;
     background-color: #FFEDED;
+}
+
+//放大镜的css
+img{
+    border: 0;
+}
+/* 垂直居中 */
+//.small-img{
+//    display: flex;
+//    align-items:center;
+//    justify-content: center;
+//}
+.clearfix:before, .clearfix:after{
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.magnifier{
+    width: 500px;
+    position: relative;
+    margin-top: 50px;
+}
+.magnifier-container{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd;
+}
+.move-view{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url('../images/move-box.png');
+}
+.images-cover{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.images-cover img{
+    position: absolute;
+}
+.magnifier-assembly{
+    height: 92px;
+    overflow: hidden;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.magnifier-btn{
+    position: absolute;
+    font-family: "宋体";
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -40px;
+}
+.magnifier-btn span{
+    line-height: 80px;
+    height: 80px;
+    width: 20px;
+    background-color: #6e6e6e;
+    color: #fff;
+    display: block;
+    z-index: 22;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.magnifier-btn .magnifier-btn-left{
+    float: left;
+}
+.magnifier-btn .magnifier-btn-right{
+    float: right;
+}
+.magnifier-line{
+    position: relative;
+    overflow: hidden;
+    height: 92px;
+}
+.magnifier-line ul{
+    display: block;
+    font-size: 0;
+    width: 10000%;
+    position: absolute;
+    left: 0;
+    z-index: 22;
+}
+.magnifier-line li{
+    float: left;
+    width: 100px;
+    cursor: pointer;
+}
+.magnifier-line ul > .active .small-img{
+    border-color: #bbb;
+}
+.small-img{
+    height: 78px;
+    padding: 1px;
+    margin: 5px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.small-img img{
+    width: 100%;
+    height: 100%;
+}
+.magnifier-view{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -105%;
+    top: 0;
+    z-index: 22;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+}
+.magnifier-view img{
+    display: block;
+}
+.animation03{
+    transition: all 0.3s ease-in 0.1s;
+    -ms-transition: all 0.3s ease-in 0.1s;
+    -moz-transition: all 0.3s ease-in 0.1s;
+    -webkit-transition: all 0.3s ease-in 0.1s;
+    -o-transition: all 0.3s ease-in 0.1s;
 }

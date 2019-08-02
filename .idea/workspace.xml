@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://D:/feiq/Program Files/feiq/Recv Files/day32-requirejs/second-project/src/js/modules/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="75">
+              <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -131,7 +131,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="929" />
     <option name="width" value="889" />
     <option name="height" value="1032" />
@@ -232,17 +232,17 @@
       <workItem from="1564292373620" duration="11952000" />
       <workItem from="1564364122390" duration="21130000" />
       <workItem from="1564404026781" duration="790000" />
-      <workItem from="1564449813112" duration="5486000" />
+      <workItem from="1564449813112" duration="5869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84534000" />
+    <option name="totallyTimeSpent" value="84917000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13915344" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13915344" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -254,7 +254,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4994709" visible="true" weight="0.32918552" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4994709" weight="0.32918552" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005291" side_tool="true" weight="0.32918552" />
       <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -640,8 +640,8 @@
     </entry>
     <entry file="file://D:/feiq/Program Files/feiq/Recv Files/day32-requirejs/second-project/src/js/modules/header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="75">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
