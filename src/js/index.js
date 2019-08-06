@@ -2,7 +2,9 @@ require(['./config'], () =>{
     require(['template',"url", 'footer'], (template, url) =>{
         class Index  {
             constructor(){
-                this.getLimiBuy();
+                this.getLimiBuy()
+                this.cart();
+
             }
             getLimiBuy(){
                 $.get(`${url.rap}/index/tv`, resp =>{
@@ -10,14 +12,13 @@ require(['./config'], () =>{
                         const { list } = resp.body
                         $(".topUl").html(template("desktop", { list }))
                         $(".topUl").html(template("desktop2", { list }))
-                        this.getSearch();
                     }
                 })
             }
-            getSearch(){
-                console.log($("#hdCen"))
-                var $ulCen = $("#hdCen")
-                $("#hdCen").style.display = "none";
+            cart(){
+                let cart = localStorage.getItem("cart")
+                cart = JSON.parse(cart)
+                $(".shopping a i").html(cart.length)
             }
         }
         new Index()

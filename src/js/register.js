@@ -11,7 +11,6 @@ require(['./config'], () =>{
                     $(this).addClass("now").siblings().removeClass("now")
                     $(".regist .regist_main>div").eq($(this).index()).addClass("blo").siblings().removeClass("blo")
                 })
-
             }
         }
         new Register()

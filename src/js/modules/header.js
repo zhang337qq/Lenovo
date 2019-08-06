@@ -59,6 +59,7 @@ define(["jquery"], () =>{
                 $("#inputUl").html("");
             })
         }
+
     }
     return new Header()
 })

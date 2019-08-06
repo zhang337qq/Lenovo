@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/images/b2c_favicon.ico">
+    <title>联想商城-购物车</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+<div class="box-top">
+    <div class="cen-top">
+        <ul class="fr">
+            <li><a href="/">返回首页</a></li>
+            <li><a href="/html/login.html" target="_blank">登录</a></li>
+        </ul>
+    </div>
+</div>
+<div class="top_logo">
+    <img src="/images/pic-13.jpg" alt="" class="fl">
+    <img src="/images/pic-12.jpg" alt="" class="fr">
+</div>
+<section class="cartMain">
+    <div class="cartMain_hd">
+        <ul class="order_lists cartTop">
+            <li class="list_chk">
+                <!--所有商品全选-->
+                <input type="checkbox" id="all" class="whole_check">
+                <label for="all"></label>
+                全选
+            </li>
+            <li class="list_con">商品信息</li>
+            <li class="list_info">商品参数</li>
+            <li class="list_price">单价</li>
+            <li class="list_amount">数量</li>
+            <li class="list_sum">金额</li>
+            <li class="list_op">操作</li>
+        </ul>
+    </div>
+    <div class="mask">
+        <script type="text/html" id="template-cart">
+            {{each cart data}}
+            <div class="cartBox">
+                <div class="order_content">
+                    <ul class="order_lists linehei">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox" class="son_check">
+                            <label for="checkbox"></label>
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img"><a href="javascript:;"><img src="{{data.imgs[0]}}" alt=""></a></div>
+                            <div class="list_text"><a href="javascript:;">{{data.name}}</a>
+                                <br/>
+                                <img src="/images/lenovo_icon.jpg" alt=""><span>购买联想服务</span>
+                            </div>
+                            
+                        </li>
+                        <li class="list_info">
+                            <p>规格:<span>{{data.model[1]}}</span></p>
+                            <p>{{data.model[0]}}</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">{{data.price}}</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="javascript:;" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="javascript:;" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="sum_price">{{data.price * 1}}</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+{{/each}}
+        </script>
+    </div>
+    <!--底部-->
+    <div class="bar-wrapper">
+        <div class="bar-right">
+            <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+            <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+            <div class="calBtn"><a href="javascript:;">结算</a></div>
+        </div>
+    </div>
+</section>
+<section class="model_bg"></section>
+<section class="my_model">
+    <p class="title">删除宝贝<span class="closeModel">X</span></p>
+    <p>您确认要删除该宝贝吗？</p>
+    <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+</section>
+<div class="_rcmd_container">
+    <div class="_rcmd_title">
+        <span class="_rcmd_decorate"></span>
+        <span class="_rcmd_tip">为您推荐</span>
+    </div>
+    <div class="_rcmd_area">
+        <span class="le _rcmd_btn"><img src="/images/left.png" alt=""></span>
+        <div class="_rcmd_hot">
+            <ul class="_rcmd_hot_ul">
+                <script type="text/html" id="template-rcmd">
+                {{each list shop}}
+                <li>
+                    <div class="_rcmd_good_tumb_c">
+                        <a href="/html/particulars.html?id={{shop.id}}" target="_blank">
+                            <img src="{{shop.img}}" alt="">
+                        </a>
+                    </div>
+                    <span class="_rcmd_good_name">{{shop.title}}</span>
+                    <span class="_rcmd_good_price"> ￥{{shop.price}}</span>
+                </li>
+                 {{/each}}
+                </script>
+            </ul>
+        </div>
+        <span class="ri _rcmd_btn"><img src="/images/right.png" alt=""></span>
+    </div>
+</div>
+<footer></footer>
+<script src="/libs/requirejs/require.min.js" data-main="/js/cart.js"></script>
+</body>
+</html>
