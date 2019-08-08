@@ -1,5 +1,5 @@
 require(['./config'], () =>{
-    require(['template','url', 'header', 'footer','magnifier'], (template, url) =>{
+    require(['template','url', 'header', 'footer','magnifier', 'fly'], (template, url, header) =>{
         class listPage  {
             constructor(){
                 this.getData().then(() =>{
@@ -38,13 +38,14 @@ require(['./config'], () =>{
                 })
             }
             addToCart(){
-                $("#addShop").on("click", ()=>{
+                $("#addShop").on("click", (e)=>{
                     // console.log(123)
                     console.log(this.detail)
                     let cart = localStorage.getItem("cart")
                     if (cart) {
                         //这里将cart 转化成jsonp 的方式  因为之前是一个js原生的方式 所以这里要转换
                         cart = JSON.parse(cart)
+                        //判断当前火速局是否已经添加过购物车
                         const isExist = cart.some(item =>{
                             return item.id === this.detail.id
                         })
@@ -59,11 +60,32 @@ require(['./config'], () =>{
                         }
                         localStorage.setItem("cart", JSON.stringify(cart))
                     }else {
+                        var numBer = $("#num").val();
                         //这里定义一个数组 用来保存后面的数据
                         var arr = []
-                        arr.push({...this.detail, num: 1})
+                        arr.push({...this.detail, num: numBer})
                         localStorage.setItem("cart", JSON.stringify(arr))
+
                     }
+                    $(`<img src="${this.detail.imgs[0]}" style="width: 30px;position: fixed; height: 30px;border-radius: 50%">`).fly({
+                        start:{
+                            left: e.pageX,
+                            top: e.pageY
+                        },
+                        end:{
+                            left: 0,
+                            top: 0,
+                            width: 0, //结束时高度
+                            height: 0 //结束时高度
+                        },
+                        speed: 0.7, //越大越快，默认1.2
+                        onEnd: function(){
+                            //结束回调，移出DOM
+                            this.destroy()
+                            header.cartNum()
+                        }
+                    })
+
                 })
             }
 

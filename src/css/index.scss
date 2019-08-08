@@ -18,6 +18,8 @@ header{
 .fr{
     float: right;
 }
+//登录显示用户姓名
+
 header h1{
     position: fixed;
     left: 0;
@@ -57,16 +59,25 @@ header h1 a img{
     width: 246px;
     height: 53px;
     display: flex;
+    line-height: 53px;
     align-items: center;
     background: #fff;
 }
+.container-nav .hd-right .welcome{
+    color: darkred;
+}
 .container-nav .hd-right li>img{
     width: 22px;
-    display: block;
+    margin-top: 15px;
+    display: inline-block;
+}
+.container-nav .hd-right li a.secede{
+    color: red;
 }
 .container-nav .hd-right li{
+    float: left;
+    line-height: 53px;
     margin: 0 14px;
-
 }
 .container-nav .hd-right .user{
     display: flex;

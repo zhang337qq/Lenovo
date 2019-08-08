@@ -11,11 +11,11 @@
 <div class="regist">
     <div class="regist_title">注册联想会员</div>
     <div class="regist_tap">
-        <h3 class="person_regist now">个人用户注册</h3>
-        <h3 class="company_regist">企业用户注册</h3>
+        <h3 class="person_regist">个人用户注册</h3>
+        <h3 class="company_regist now">企业用户注册</h3>
     </div>
     <div class="regist_main">
-        <div class="blo">
+        <div>
             <div class="regist_item">
                 <input type="text" placeholder="请输入手机号">
                 <i class="icon-clear"></i>
@@ -50,29 +50,35 @@
                 </span>
             </div>
         </div>
-        <div class="regist_info_person">
+        <div class="regist_info_person blo">
             <div class="regist_item">
-                <input type="text" placeholder="请输入手机号">
+                <span class="phone"></span>
+                <input type="text" placeholder="请输入手机号" id="phone">
                 <i class="icon-clear"></i>
             </div>
             <div class="regist_item">
-                <input type="text" placeholder="企业名称">
+                <span class="company"></span>
+                <input type="text" placeholder="企业名称" id="company">
                 <i class="icon-clear"></i>
             </div>
             <div class="regist_item">
-                <input type="text" placeholder="企业邮箱">
+                <span class="companyEmail"></span>
+                <input type="email" placeholder="企业邮箱" id="companyEmail">
                 <i class="icon-clear"></i>
             </div>
             <div class="regist_item">
-                <input type="text" placeholder="企业税号">
+                <span class="companyDuty"></span>
+                <input type="text" placeholder="企业税号" id="companyDuty">
                 <i class="icon-clear"></i>
             </div>
             <div class="regist_item">
-                <input type="password" class="pwd" placeholder="输入密码，密码长度8-20位字符">
+                <span class="pass"></span>
+                <input type="password" class="pwd1" placeholder="输入密码，密码长度8-20位字符">
                 <i class="icon-clear"></i>
             </div>
             <div class="regist_item">
-                <input type="password" class="pwd" placeholder="再次输入密码">
+                <span class="password"></span>
+                <input type="password" class="pwd2" placeholder="再次输入密码">
                 <i class="icon-clear"></i>
             </div>
             <div class="regist_item clearfix">

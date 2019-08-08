@@ -475,17 +475,16 @@
                         </div>
                     </div>
                 </li>
-    
                 <li>社区</li>
                 <li>服务</li>
                 <li>资讯</li>
                 <li>门店</li>
             </ul>
-            <ul class="hd-right fr">
+            <ul class="hd-right fr" id="unlogin">
                 <li>
                     <img src="images/357aac65-7c0e-45d8-a10d-c317da3abbde.png" alt="">
                 </li>
-                <li class="user">
+                <li class="user" id="user">
                     <a href="/html/login.html" target="_blank"><span>登录</span></a>
                     <strong></strong>
                     <a href="/html/register.html" target="_blank"><span>注册</span></a>
@@ -496,6 +495,10 @@
                         </a>
                     </div>
                 </li>
+            </ul>
+            <ul class="fr hd-right" style="display: none" id="islogin">
+                <li class="welcome">欢迎您，</li>
+                <li><span class="username"></span> &nbsp; <a href="javascript:;" class="secede">退出登录</a></li>
             </ul>
         </div>
     </header>

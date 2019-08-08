@@ -120,5 +120,12 @@
         color: #3680c1;
         font-size: 14px;
     }
+      span{
+        position: absolute;
+        right: -220px;
+        top: 13px;
+        width: 200px;
+        z-index: 2;
+      }
   }
 }

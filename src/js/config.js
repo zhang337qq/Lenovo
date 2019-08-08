@@ -7,10 +7,18 @@ require.config({
         'template': 'libs/art-template/template-web',
         'url': 'js/modules/url',
         "magnifier": 'libs/jquery-plugins/magnifier',
+        'fly': 'libs/jquery-plugins/jquery.fly.min',
+        'cookie': 'libs/jquery-plugins/jquery.cookie'
     },
     // 对于不遵循amd规范得模块但是他又依赖别的模块，那么要写垫片
     shim:{
         'magnifier':{
+            deps: ['jquery']
+        },
+        'fly':{
+            deps: ['jquery']
+        },
+        'cookie': {
             deps: ['jquery']
         }
     }
